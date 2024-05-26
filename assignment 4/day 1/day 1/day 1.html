@@ -1,0 +1,174 @@
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background: #f0f0f0; padding: 10px; }
+        main { padding: 10px; }
+        section { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Tags Example</h1>
+        <nav>
+            <ul>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#semantic">Semantic</a></li>
+                <li><a href="#other">Other</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="text">
+            <h2>Text</h2>
+            <p>This is a paragraph (<code>&lt;p&gt;</code>).</p>
+            <p><strong>Bold text</strong> and <em>italic text</em>.</p>
+            <p><mark>Highlighted text</mark> and <small>small text</small>.</p>
+            <blockquote cite="https://www.example.com">This is a blockquote.</blockquote>
+            <pre>This is preformatted text.</pre>
+            <code>console.log('Hello, world!');</code>
+            <abbr title="Hypertext Markup Language">HTML</abbr>
+        </section>
+
+        <section id="media">
+            <h2>Media</h2>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                <figcaption>Figure 1: A placeholder image.</figcaption>
+            </figure>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls width="250">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <canvas id="myCanvas" width="150" height="150" style="border:1px solid #000000;"></canvas>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            <table border="1">
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="lists">
+            <h2>Lists</h2>
+            <ul>
+                <li>Unordered list item 1</li>
+                <li>Unordered list item 2</li>
+                <li>Unordered list item 3</li>
+            </ul>
+            <ol>
+                <li>Ordered list item 1</li>
+                <li>Ordered list item 2</li>
+                <li>Ordered list item 3</li>
+            </ol>
+            <dl>
+                <dt>Definition list term</dt>
+                <dd>Definition list description</dd>
+            </dl>
+        </section>
+
+        <section id="semantic">
+            <h2>Semantic Elements</h2>
+            <article>
+                <header>
+                    <h3>Article Title</h3>
+                </header>
+                <p>This is an article.</p>
+                <footer>Article footer</footer>
+            </article>
+            <aside>
+                <h3>Aside Title</h3>
+                <p>This is an aside section.</p>
+            </aside>
+            <details>
+                <summary>Details Summary</summary>
+                <p>Details content</p>
+            </details>
+            <section>
+                <h3>Section Title</h3>
+                <p>This is a section.</p>
+            </section>
+        </section>
+
+        <section id="other">
+            <h2>Other Elements</h2>
+            <div>This is a div.</div>
+            <span>This is a span.</span>
+            <iframe src="https://www.example.com" title="Example Iframe" width="300" height="200"></iframe>
+            <progress value="50" max="100"></progress>
+            <meter value="0.6">60%</meter>
+            <br>
+            <button type="button">Button</button>
+            <a href="https://www.example.com">This is a link</a>
+            <time datetime="2024-05-24">May 24, 2024</time>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Tags Example</p>
+    </footer>
+
+    <script>
+        // Simple script to draw on the canvas
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, 100, 100);
+    </script>
+
+</body>
+</html>
+
+
